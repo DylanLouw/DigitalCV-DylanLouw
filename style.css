@@ -203,6 +203,16 @@ section {
     gap: 1rem;
 }
 
+.profile-pic{
+   
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
 /*Icon Section*/
 .icon{
     cursor: pointer;
@@ -278,7 +288,11 @@ section {
 }
 
 .about-pic{
+    display: block;
+    width: auto;
+    height: auto;
     border-radius: 2rem;
+    margin: 0 auto;
 }
 
 .arrow{
