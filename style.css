@@ -247,6 +247,14 @@ section {
     filter: drop-shadow(0 0 3px var(--accent));
 }
 
+#socials-container .icon{
+    filter: brightness(0) invert(1) ;
+    transition: filter 0.3s ease;
+}
+
+#socials-container .icon:hover {
+    filter: brightness(0) invert(1) drop-shadow(0 0 8px var(--accent));
+}
 
 /*Icon Section*/
 .icon{
