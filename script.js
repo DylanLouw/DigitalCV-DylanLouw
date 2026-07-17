@@ -1,3 +1,4 @@
+// Toggles the hamburger menu to open and close as the icon is clicked.
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -5,7 +6,9 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
+//Wait for the page to load completely before grabbing any of the elements.
 document.addEventListener("DOMContentLoaded",() => {
+    //Fade in on scroll.
     const sections = document.querySelectorAll("section");
     sections.forEach(section => section.classList.add("reveal"));
     const observer = new IntersectionObserver(
@@ -15,11 +18,12 @@ document.addEventListener("DOMContentLoaded",() => {
                  entry.target.classList.add("visible");
              }
             })
-        }, {threshold: 0.15}
+        }, {threshold: 0.15} //Only trigger once 15% of section is visible.
     );
 
-sections.forEach(section => observer.observe(section));
 
+sections.forEach(section => observer.observe(section));
+//Typing effect for the Software dev text under my name.
 const typedText = "Software Developer";
 const typingElement = document.querySelector(".section__text__p2");
 typingElement.textContent="";
@@ -33,7 +37,7 @@ const typingInterval = setInterval(()=>
         } 
         else 
             {
-                clearInterval(typingInterval)
+                clearInterval(typingInterval)//Stop once done, otherwise it keeps adding undefined to the beack.
             }
     }  
     ,100
