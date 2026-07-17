@@ -17,6 +17,25 @@ document.addEventListener("DOMContentLoaded",() => {
             })
         }, {threshold: 0.15}
     );
-    sections.forEach(section => observer.observe(section));
-});
 
+sections.forEach(section => observer.observe(section));
+
+const typedText = "Software Developer";
+const typingElement = document.querySelector(".section__text__p2");
+typingElement.textContent="";
+let i=0;
+const typingInterval = setInterval(()=>
+    {
+    if(i < typedText.length)
+        {
+            typingElement.textContent += typedText[i];
+            i++;
+        } 
+        else 
+            {
+                clearInterval(typingInterval)
+            }
+    }  
+    ,100
+);
+});
