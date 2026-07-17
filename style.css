@@ -244,7 +244,11 @@ section {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    filter: drop-shadow(0 0 3px var(--accent));
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover{
+    transform: scale(1.05);
 }
 
 #socials-container .icon{
@@ -260,7 +264,7 @@ section {
 .icon{
     cursor: pointer;
     height: 2rem;
-     filter: drop-shadow(0 0 2px var(--accent));
+    
 }
 
 #contact .icon,
@@ -269,10 +273,15 @@ footer .icon {
     transition: filter 0.3s ease;
 }
 
-#contact .icon:hover,
-footer .icon:hover {
-    filter: brightness(0) invert(1) drop-shadow(0 0 8px var(--accent));
+
+.arrow:hover{
+filter: drop-shadow(0 0 5px var(--accent));
 }
+
+.about{
+    cursor: default;
+}
+
 
 
 
@@ -428,6 +437,7 @@ article{
 
 article .icon{
     cursor: default;
+    filter: drop-shadow(0 0 5px var(--accent));
 }
 
 /*Projects section*/
