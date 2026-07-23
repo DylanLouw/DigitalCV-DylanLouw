@@ -63,6 +63,11 @@ body.light-mode #theme-toggle-mobile {
     border-color: rgba(0, 0, 0, 0.3);
 }
 
+#theme-toggle{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
 #theme-toggle:hover,
 #theme-toggle-mobile:hover {
     transform: scale(1.2);
