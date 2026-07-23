@@ -467,6 +467,11 @@ article .icon{
     border-color: rgb(163,163,163);
 }
 
+.project-description{
+    font-size: 0.95rem;
+    margin: 0.5rem 0 1rem;
+}
+
 /*Contact section*/
 #contact {
     display: flex;

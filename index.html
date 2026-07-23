@@ -9,7 +9,7 @@
 </head>
 <body>
 
-
+<!-- Desktop navigation-hidden on mobile via media query -->
     <nav id="desktop-nav">
         <div class="logo"> Dylan Louw</div>  
         <div> 
@@ -22,6 +22,7 @@
         </div>  
     </nav>
 
+<!-- Mobile hamburger navigation-shown below 1200px screen size -->
     <nav id="hamburger-nav">
         <div class="logo"> Dylan Louw</div>  
         <div class="hamburger-menu">
@@ -44,6 +45,7 @@
         </div>  
     </nav>
 
+<!-- ================= PROFILE SECTION ================= -->
     <section id="profile">
     <div class="section__pic-cont">
         <img src="./assets/MeFace.webp" alt="Dylan Louw Profile Picture" class="profile-pic"  />
@@ -66,6 +68,7 @@
     </div>
     </section>
 
+<!-- ================= ABOUT SECTION ================= -->
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
@@ -115,6 +118,7 @@ Looking ahead, I'm finishing up my undergraduate degree this year and hope to di
         />
     </section>
 
+<!-- ================= EXPERIENCE SECTION ================= -->
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
@@ -254,6 +258,7 @@ Looking ahead, I'm finishing up my undergraduate degree this year and hope to di
         />
     </section>
 
+<!-- ================= PROJECTS SECTION ================= -->
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
@@ -268,12 +273,14 @@ Looking ahead, I'm finishing up my undergraduate degree this year and hope to di
                     />
                 </div>
                 <h2 class="experience-sub-title project-title">Pothole Reporting Interface</h2>
+                <p class="project-description">
+                        Pothole reporting system for Potchefstroom, built with C#, ASP.NET, and SQL Server.
+                </p>
                 <div class="btn-cont">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PotchHoles/PotchHolesCMPG223'">
-                        Github
-                    </button>
-                    
-            </div>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PotchHoles/PotchHolesCMPG223'">
+                         Github
+                        </button>
+                </div>
             </div>
             <div class="details-cont color-cont">
                 <div class="article-cont">
@@ -284,12 +291,15 @@ Looking ahead, I'm finishing up my undergraduate degree this year and hope to di
                     />
                 </div>
                 <h2 class="experience-sub-title project-title">Personal Portfolio Website</h2>
+                 <p class="project-description">
+                        Responsive personal portfolio built with HTML, CSS, and JavaScript.
+                </p>
                 <div class="btn-cont">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DylanLouw/DigitalCV-DylanLouw'">
-                        Github
-                    </button>
-                    
-            </div>
+                   
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DylanLouw/DigitalCV-DylanLouw'">
+                           Github
+                        </button>
+                </div>
             </div>
             <div class="details-cont color-cont">
                 <div class="article-cont">
@@ -300,14 +310,18 @@ Looking ahead, I'm finishing up my undergraduate degree this year and hope to di
                     />
                 </div>
                 <h2 class="experience-sub-title project-title">Project In Progress</h2>
+                    <p class="project-description">
+                        New project currently in development - details coming soon.
+                    </p>
                 <div class="btn-cont">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                        Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                        Live Demo
-                    </button>
-            </div>
+                   
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                             Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                           Live Demo
+                        </button>
+                </div>
             </div>
         </div>
         </div>
@@ -320,6 +334,7 @@ Looking ahead, I'm finishing up my undergraduate degree this year and hope to di
         />
     </section>
 
+<!-- ================= CONTACT SECTION ================= -->
     <section id="contact">
         <p class="section__text__p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -343,6 +358,7 @@ Looking ahead, I'm finishing up my undergraduate degree this year and hope to di
         </div>
     </section>
 
+<!-- ================= FOOTER SECTION ================= -->
     <footer>
         <nav>
             <div class="nav-links-cont">            
@@ -357,8 +373,8 @@ Looking ahead, I'm finishing up my undergraduate degree this year and hope to di
         <p>Copyright &#169; 2026 Dylan Louw. All rights Reserved.</p>
     </footer>
 
+<!-- Hamburger menu toggle, scroll animations, and typing effect -->
+<script src="script.js"></script>
 
-
-    <script src="script.js"></script>
 </body>
 </html>
