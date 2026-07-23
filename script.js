@@ -6,8 +6,30 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
+// Toggles light/dark theme, updates button icons, and saves preference.
+function toggleTheme() {
+    const isLight = document.body.classList.toggle("light-mode");
+    const desktopBtn = document.getElementById("theme-toggle");
+    const mobileBtn = document.getElementById("theme-toggle-mobile");
+    const icon = isLight ? "◑" : "◐";
+
+    if (desktopBtn) desktopBtn.textContent = icon;
+    if (mobileBtn) mobileBtn.textContent = icon;
+
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+}
+
 //Wait for the page to load completely before grabbing any of the elements.
 document.addEventListener("DOMContentLoaded",() => {
+    // Restore saved theme preference on load.
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+        const desktopBtn = document.getElementById("theme-toggle");
+        const mobileBtn = document.getElementById("theme-toggle-mobile");
+        if (desktopBtn) desktopBtn.textContent = "◑";
+        if (mobileBtn) mobileBtn.textContent = "◑";
+    }
     //Fade in on scroll.
     const sections = document.querySelectorAll("section");
     sections.forEach(section => section.classList.add("reveal"));
