@@ -22,5 +22,16 @@ A personal portfolio website built to showcase my skills.
   -CSS
   -JavaScript
   -Google Fonts
-
+  
+  ## Setup Instructions
+  1. Clone the repository:
+  ```bash
+     git clone https://github.com/DylanLouw/DigitalCV-DylanLouw.git
+  ```
+  2. Navigate into the project folder:
+  ```bash
+     cd DigitalCV-DylanLouw
+  ```
+  3. Open `index.html` in your browser, no build tools or dependencies required.
+  -For the best experience during development, use a tool like VS Codes "Live Server" extension for auto-page-reloading.
   
